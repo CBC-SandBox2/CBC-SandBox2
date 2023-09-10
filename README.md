@@ -17,3 +17,23 @@ For configuring the app you can either set these variables in your environment o
 - `DB_SSL` — should the database connection use SSL (true|false)
 
 Extra info is available in the `.env.sample` file.
+
+
+## Local development on MacOS
+```
+xcode-select --install
+brew install node
+brew install nvm
+```
+Add the below to ~/.bash_profile  
+```
+export NVM_DIR="$HOME/.nvm"                    
+    [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+    [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+```
+then
+`source ~/.bash_profile`
+
+`nvm install 14.15.0`
+`npm install -g yarn`
+`yarn install`

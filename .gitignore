@@ -1,3 +1,4 @@
+node_modules/*
 # Logs
 logs
 *.log
@@ -109,3 +110,7 @@ dist
 # Resource directories
 uploads/*
 public/uploads/*
+package-lock.json
+BookBase-main/.DS_Store
+.DS_Store
+yarn.lock
